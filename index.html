@@ -1,215 +1,102 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Plano Alimentar Interativo - Daniela</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; text-align: center; }
-        h1 { color: #2e7d32; }
-        h2 { background: #d3f8d3; padding: 10px; border-radius: 5px; text-align: left; }
-        .food { margin: 10px 0; text-align: left; }
-        .substitutions { margin-left: 20px; display: none; text-align: left; }
-        .toggle-btn { color: #0066cc; cursor: pointer; text-decoration: underline; }
-        .logo { max-width: 200px; margin: 0 auto 10px auto; display: block; }
-        .links { margin-top: 10px; font-size: 14px; }
-        .links a { margin: 0 10px; text-decoration: none; color: #0066cc; }
-    </style>
-    <script>
-        function toggle(id) {
-            var el = document.getElementById(id);
-            el.style.display = (el.style.display === "none") ? "block" : "none";
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano Marlon - CNBOX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #29E31B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #29E31B;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <img src="https://cnboxipatinga.github.io/plano-daniela/Transparente.PNG" alt="Logo CNBOX" class="logo">
-    <div class="links">
-        <a href="https://www.instagram.com/cnboxipatinga?igsh=ZHRhcmxtZ3p0c2do" target="_blank">Instagram</a> |
-        <a href="https://wa.me/31971951755" target="_blank">WhatsApp</a>
+  <header>
+    <h1>Plano Marlon - CNBOX</h1>
+    <p>Projeto de Redução de Gordura Corporal e Condicionamento Físico</p>
+  </header>
+
+  <section>
+    <h2>Dados Corporais Iniciais</h2>
+    <p><strong>Peso:</strong> 72,9 kg</p>
+    <p><strong>IMC:</strong> 25,2</p>
+    <p><strong>Gordura Corporal:</strong> 20,9%</p>
+    <p><strong>Idade Metabólica:</strong> 22 anos</p>
+    <p><strong>Objetivo:</strong> Redução de gordura corporal, manutenção de massa magra, melhora da postura e desempenho para prova da polícia penal.</p>
+  </section>
+
+  <section>
+    <h2>Plano Alimentar Base</h2>
+    <p><strong>Café da Manhã:</strong> 1 ovo + 1 clara, 1 fatia de pão integral, 1 fruta, 1 colher de pasta de amendoim.</p>
+    <p><strong>Lanche da Manhã:</strong> Iogurte natural + fruta pequena.</p>
+    <p><strong>Almoço:</strong> Proteína magra, arroz integral ou batata doce, feijão, salada e azeite.</p>
+    <p><strong>Lanche da Tarde:</strong> Shake com banana + whey ou pão com pasta de amendoim.</p>
+    <p><strong>Jantar:</strong> Proteína + carboidrato leve + legumes.</p>
+    <p><strong>Ceia (opcional):</strong> Leite com cacau, ovo cozido ou mix de castanhas.</p>
+    <p><em>Beber pelo menos 2,5L de água por dia. Refeição livre 1x por semana.</em></p>
+  </section>
+
+  <section>
+    <h2>Rotina Semanal de Treinos</h2>
+    <ul>
+      <li><strong>Segunda:</strong> CrossFit + mobilidade pélvica</li>
+      <li><strong>Terça:</strong> Força (costas + bíceps) + mobilidade escapular</li>
+      <li><strong>Quarta:</strong> CrossFit + mobilidade completa (ênfase torácica)</li>
+      <li><strong>Quinta:</strong> Força (peito + tríceps + core) + mobilidade</li>
+      <li><strong>Sexta:</strong> CrossFit leve + mobilidade geral</li>
+      <li><strong>Sábado:</strong> Força (costas + ombro + core) + barra negativa</li>
+      <li><strong>Domingo:</strong> Corrida leve ou descanso ativo</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Fotos Iniciais</h2>
+    <div class="fotos">
+      <img src="foto1.jpg" alt="Lado esquerdo Marlon">
+      <img src="foto2.jpg" alt="Lado direito Marlon">
+      <img src="foto3.jpg" alt="Costas Marlon">
+      <img src="foto4.jpg" alt="Frente Marlon">
     </div>
-    <h1>Plano Alimentar – Daniela Valverde (Hipertrofia)</h1>
-    <p><strong>Objetivo:</strong> Hipertrofia com superávit de ~500 kcal</p>
-<h2>Café da Manhã</h2>
-        <div class="food">
-            <strong>Tapioca com chia (50g)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub1')">Ver substituições</span>
-            <div class="substitutions" id="sub1">
-                <ul>
-                    <li>2 fatias de pão sem glúten</li><li>3 colheres de sopa de aveia</li><li>1 fatia de cuscuz</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Ovos inteiros (2 un)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub2')">Ver substituições</span>
-            <div class="substitutions" id="sub2">
-                <ul>
-                    <li>Tofu (80g)</li><li>Omelete de claras</li><li>Whey concentrado (30g)</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Café com leite sem açúcar (1 xícara)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub3')">Ver substituições</span>
-            <div class="substitutions" id="sub3">
-                <ul>
-                    <li>Chá verde</li><li>Leite vegetal com canela</li><li>Café preto puro</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Lanche da Manhã</h2>
-        <div class="food">
-            <strong>Iogurte sem lactose (170g)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub4')">Ver substituições</span>
-            <div class="substitutions" id="sub4">
-                <ul>
-                    <li>Leite vegetal + chia</li><li>Kefir</li><li>Iogurte proteico zero lactose</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Banana (1 un)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub5')">Ver substituições</span>
-            <div class="substitutions" id="sub5">
-                <ul>
-                    <li>Maçã</li><li>Pera</li><li>Mamão</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Almoço</h2>
-        <div class="food">
-            <strong>Filé de frango grelhado (100g)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub6')">Ver substituições</span>
-            <div class="substitutions" id="sub6">
-                <ul>
-                    <li>Patinho moído</li><li>Peixe grelhado</li><li>Tofu</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Arroz integral (3 colheres)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub7')">Ver substituições</span>
-            <div class="substitutions" id="sub7">
-                <ul>
-                    <li>Quinoa</li><li>Batata-doce (100g)</li><li>Mandioca (90g)</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Feijão (2 colheres)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub8')">Ver substituições</span>
-            <div class="substitutions" id="sub8">
-                <ul>
-                    <li>Grão-de-bico</li><li>Lentilha</li><li>Ervilha</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Salada crua + azeite</strong> –
-            <span class="toggle-btn" onclick="toggle('sub9')">Ver substituições</span>
-            <div class="substitutions" id="sub9">
-                <ul>
-                    <li>Legumes cozidos</li><li>Verduras refogadas</li><li>Mix de folhas</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Lanche da Tarde</h2>
-        <div class="food">
-            <strong>Fruta (1 un)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub10')">Ver substituições</span>
-            <div class="substitutions" id="sub10">
-                <ul>
-                    <li>Fruta seca (30g)</li><li>Vitamina com leite vegetal</li><li>Suco natural + castanha</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Whey Protein (30g)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub11')">Ver substituições</span>
-            <div class="substitutions" id="sub11">
-                <ul>
-                    <li>Ovo cozido + batata-doce</li><li>Iogurte proteico</li><li>Tofu grelhado</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Pré-Treino</h2>
-        <div class="food">
-            <strong>Banana (1 un)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub12')">Ver substituições</span>
-            <div class="substitutions" id="sub12">
-                <ul>
-                    <li>Batata-doce (100g)</li><li>Tapioca (50g)</li><li>Cuscuz (60g)</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Pasta de amendoim (1 colher)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub13')">Ver substituições</span>
-            <div class="substitutions" id="sub13">
-                <ul>
-                    <li>Abacate (2 colheres)</li><li>Castanhas (5 un)</li><li>Coco ralado sem açúcar</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Jantar</h2>
-        <div class="food">
-            <strong>Ovos cozidos/mexidos (2 un)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub14')">Ver substituições</span>
-            <div class="substitutions" id="sub14">
-                <ul>
-                    <li>Frango (100g)</li><li>Atum</li><li>Omelete com legumes</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Legumes cozidos</strong> –
-            <span class="toggle-btn" onclick="toggle('sub15')">Ver substituições</span>
-            <div class="substitutions" id="sub15">
-                <ul>
-                    <li>Salada crua</li><li>Sopa de legumes</li><li>Purê de abóbora</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Batata-doce ou mandioca (100–120g)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub16')">Ver substituições</span>
-            <div class="substitutions" id="sub16">
-                <ul>
-                    <li>Quinoa</li><li>Arroz integral</li><li>Inhame</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Ceia (opcional)</h2>
-        <div class="food">
-            <strong>Leite vegetal ou iogurte (1 copo)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub17')">Ver substituições</span>
-            <div class="substitutions" id="sub17">
-                <ul>
-                    <li>Chá com colágeno</li><li>Iogurte zero lactose</li><li>Kefir com mel</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="food">
-            <strong>Aveia ou chia (1 colher)</strong> –
-            <span class="toggle-btn" onclick="toggle('sub18')">Ver substituições</span>
-            <div class="substitutions" id="sub18">
-                <ul>
-                    <li>Granola sem açúcar</li><li>Linhaça</li><li>Farinha de banana verde</li>
-                </ul>
-            </div>
-        </div>
-        
+  </section>
+
+  <footer>
+    <p>CNBOX - Desenvolvido com foco em resultado e saúde</p>
+  </footer>
 </body>
 </html>

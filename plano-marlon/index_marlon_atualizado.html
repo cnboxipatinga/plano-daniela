@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plano Marlon - CNBOX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #29E31B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #29E31B;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+    .substituicoes {
+      margin-top: 10px;
+      display: none;
+      background: #eefbe9;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .botao {
+      background: #29E31B;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function toggleSubstituicoes() {
+      var div = document.getElementById('listaSubstituicoes');
+      div.style.display = div.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Plano Marlon - CNBOX</h1>
+    <p>Projeto de Redução de Gordura Corporal e Condicionamento Físico</p>
+  </header>
+
+  <section>
+    <h2>Dados Corporais Iniciais</h2>
+    <p><strong>Peso:</strong> 72,9 kg</p>
+    <p><strong>IMC:</strong> 25,2</p>
+    <p><strong>Gordura Corporal:</strong> 20,9%</p>
+    <p><strong>Idade Metabólica:</strong> 22 anos</p>
+    <p><strong>Objetivo:</strong> Redução de gordura corporal, manutenção de massa magra, melhora da postura e desempenho para prova da polícia penal.</p>
+  </section>
+
+  <section>
+    <h2>Plano Alimentar Diário</h2>
+    <p><strong>✅ Café da Manhã:</strong><br>
+    - 2 ovos + 1 clara<br>
+    - 1 fatia de pão integral ou 3 colheres de sopa de aveia<br>
+    - 1 fruta (banana, maçã ou mamão)<br>
+    - 1 colher de sopa de pasta de amendoim<br>
+    - Café preto sem açúcar</p>
+
+    <p><strong>✅ Lanche da Manhã:</strong><br>
+    - 1 iogurte natural desnatado ou vegetal<br>
+    - 1 fruta pequena (pera, mexerica ou maçã)</p>
+
+    <p><strong>✅ Almoço:</strong><br>
+    - 150g de frango grelhado ou carne magra<br>
+    - 3 colheres de sopa de arroz integral ou 1 batata doce média<br>
+    - 1 concha de feijão<br>
+    - Salada crua à vontade com 1 colher de azeite de oliva<br>
+    - Legumes refogados</p>
+
+    <p><strong>✅ Lanche da Tarde:</strong><br>
+    - Shake com 1 banana + 1 dose de whey + 200ml de água ou leite vegetal<br>
+    OU<br>
+    - 1 pão integral com 1 colher de pasta de amendoim</p>
+
+    <p><strong>✅ Jantar:</strong><br>
+    - 120g de peixe, frango ou ovos<br>
+    - 2 colheres de sopa de purê de batata ou arroz<br>
+    - Legumes ou salada leve</p>
+
+    <p><strong>✅ Ceia (opcional):</strong><br>
+    - 1 copo de leite com cacau 100%<br>
+    OU<br>
+    - 1 ovo cozido<br>
+    OU<br>
+    - Mix de castanhas (10g)</p>
+
+    <button class="botao" onclick="toggleSubstituicoes()">🔁 Clique aqui para ver substituições</button>
+    <div class="substituicoes" id="listaSubstituicoes">
+      <p><strong>Substituições sugeridas:</strong></p>
+      <ul>
+        <li><strong>Banana</strong> = maçã = mamão = pera = melão</li>
+        <li><strong>Frango</strong> = carne magra = ovos = peixe grelhado</li>
+        <li><strong>Arroz integral</strong> = batata doce = mandioquinha = purê de batata</li>
+        <li><strong>Iogurte</strong> = bebida vegetal sem açúcar = coalhada light</li>
+        <li><strong>Whey</strong> = leite em pó desnatado + cacau 100%</li>
+        <li><strong>Mix de castanhas</strong> = amendoim = 1 colher de pasta de amendoim</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rotina Semanal de Treinos</h2>
+    <ul>
+      <li><strong>Segunda:</strong> CrossFit + mobilidade pélvica</li>
+      <li><strong>Terça:</strong> Força (costas + bíceps) + mobilidade escapular</li>
+      <li><strong>Quarta:</strong> CrossFit + mobilidade completa (ênfase torácica)</li>
+      <li><strong>Quinta:</strong> Força (peito + tríceps + core) + mobilidade</li>
+      <li><strong>Sexta:</strong> CrossFit leve + mobilidade geral</li>
+      <li><strong>Sábado:</strong> Força (costas + ombro + core) + barra negativa</li>
+      <li><strong>Domingo:</strong> Corrida leve ou descanso ativo</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Fotos Iniciais</h2>
+    <div class="fotos">
+      <img src="foto1.jpg" alt="Lado esquerdo Marlon">
+      <img src="foto2.jpg" alt="Lado direito Marlon">
+      <img src="foto3.jpg" alt="Costas Marlon">
+      <img src="foto4.jpg" alt="Frente Marlon">
+    </div>
+  </section>
+
+  <footer>
+    <p>CNBOX - Desenvolvido com foco em resultado e saúde</p>
+  </footer>
+</body>
+</html>
